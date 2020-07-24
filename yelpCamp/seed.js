@@ -1,7 +1,7 @@
 var mongoose=require("mongoose");
 mongoose.connect(process.env.DATABASEURL, { useNewUrlParser: true ,useUnifiedTopology:true,useFindAndModify:false});
 // mongoose.connect('mongodb://localhost:27017/yelpcamp_app', { useNewUrlParser: true ,useUnifiedTopology:true}); 
-// mongoose.connect('mongodb+srv://nandhini:nandhini123@cluster0.7gj2x.mongodb.net/<dbname>?retryWrites=true&w=majority', { useNewUrlParser: true ,useUnifiedTopology:true,useFindAndModify:false});
+// mongoose.connect('mongodb+srv://nandhini:password@cluster0.7gj2x.mongodb.net/<dbname>?retryWrites=true&w=majority', { useNewUrlParser: true ,useUnifiedTopology:true,useFindAndModify:false});
 var Comment=require("./model/comment");
 var Campground=require("./model/campground");
 var data=[{
